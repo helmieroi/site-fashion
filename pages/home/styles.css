@@ -10,7 +10,7 @@ header {
     background-color: #fff;
     color: #06071A;
     padding: 15px 0;
-   box-shadow: 1px 1px 5px 0px gray;
+    box-shadow: 1px 1px 5px 0px gray;
 }
 
 nav {
@@ -41,11 +41,13 @@ nav ul li a {
     text-decoration: none;
 
 }
+
 nav ul li a:hover {
     color: #298556;
     text-decoration: underline;
 
 }
+
 .search-container {
     display: flex;
     height: 44px;
@@ -56,28 +58,30 @@ nav ul li a:hover {
 #search-input {
     padding: 5px 15px;
     min-width: 250px;
-   /*  border-radius: 3px;*/
+    /*  border-radius: 3px;*/
     border-radius: 25px 0px 0px 25px;
-    border:none;
+    border: none;
 }
- 
+
 #search-button {
-    padding: 5px 10px; 
+    padding: 5px 10px;
     background-color: #1d1d1d3a;
     color: #06071A;
-    border: none; 
+    border: none;
     cursor: pointer;
     border-radius: 0px 25px 25px 0px;
 }
-.hero-container{
+
+.hero-container {
     z-index: 1;
-    
+
 }
-    
-.hero-container h2{ 
+
+.hero-container h2 {
     font-size: 72px;
 }
-.hero-container p{ 
+
+.hero-container p {
     font-size: 18px;
     font-weight: 700;
 }
@@ -90,39 +94,49 @@ nav ul li a:hover {
     color: #fff;
     font-weight: 700;
     cursor: pointer;
-   
-} 
-.hero-container button:hover{ 
+
+}
+
+.hero-container button:hover {
     background: #a5a5a53f;
 }
+
 #search-button:hover {
     background-color: #1d1d1d1a;
 }
+
 .background-hero {
-position: absolute;
-width: 100%;
-background-color:#00000073;
-height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: #00000073;
+    height: 100%;
 }
+
 #hero {
-    background-image: url('../../images/Fashion-Store-Overview.jpg');
     position: relative;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    background-size: 100% 100%;
+}
+.hero1 { 
+    background-image: url('../../images/Fashion-Store-Overview.jpg');
 }
 
+.hero2 { 
+    background-image: url('../../images/hero2.png');
+}
 #products {
     padding: 20px;
 }
 
 .product-list {
     display: flex;
-   justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -131,14 +145,30 @@ height: 100%;
     border-radius: 5px;
     text-align: center;
     margin: 5px;
-    width:calc(25% - 45px);
+    width: calc(25% - 45px);
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
+
+.mini-product {
+    height: 400px;
+    padding: 3px;
+}
+
+.mini-product img {
+    height: 400px;
+}
+
+.mini-product .product-container {
+    height: 100%;
+    background: #DDE5EC;  
+}
+
 .product-container {
     padding: 15px;
 
 }
+
 .product img {
     max-width: 100%;
     height: auto;
@@ -155,7 +185,7 @@ height: 100%;
     height: 48px;
 }
 
-.product button:hover{ 
+.product button:hover {
     background: #a5a5a53f;
 }
 
@@ -168,9 +198,37 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 footer p {
     text-align: left;
     padding: 0px 25px;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+
+.swiper .swiper-button-next {
+    color:#1d1d1d98;
+}
+.swiper .swiper-button-prev {
+    color:#1d1d1d98;
+}
