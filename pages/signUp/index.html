@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body style="height: 100vh;">
+    <header style="position: initial;">
+        <nav>
+            <h1>Fashion Shop</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for products...">
+                <button id="search-button">Search</button>
+            </div>
+            <ul style="align-items: center;">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#"> Se connecter </a></li>
+                <li><a href="#PANIER" style="display: flex;align-items: center;">
+                        <span style="margin-right: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-shopping-bag">
+                                <path d="M6 2L3 6v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </span>
+                        Panier
+
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+<div style="width: 100%;">
+    <div class="container">
+        <div class="container-photo"></div>
+        <div class="container-login">
+        <h1>Signup</h1>
+        <form id="signup-form">
+            <fieldset class="fieldset-item">
+                <legend>Personal Information</legend>
+
+                <div class="item">
+                    <label for="first-name">First Name:</label><br>
+                    <input class="fullscreen" type="text" id="first-name" name="first-name" required><br>
+                </div>
+                <div class="item">
+                    <label for="last-name">Last Name:</label><br>
+                    <input class="fullscreen" type="text" id="last-name" name="last-name" required><br>
+                </div>
+                <div class="item">
+                    <label for="email">Email:</label><br>
+                    <input class="fullscreen" type="email" id="email" name="email" required><br>
+                </div>
+
+                <div class="item">
+                    <label for="password">Password:</label><br>
+                    <input class="fullscreen" type="password" id="password" name="password" required><br>
+                </div>
+
+                <div class="item">
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input class="fullscreen" type="password" id="confirm-password" name="confirm-password"
+                        required><br>
+                </div>
+                <div class="item">
+                    <label for="photo">Upload Photo:</label><br>
+                    <input type="file" id="photo" name="photo" accept="image/*" required><br>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset-item">
+                <legend>Gender</legend>
+                <label>
+                    <input style="height: 14px;" type="radio" name="gender" value="male" required> Male
+                </label>
+                <label>
+                    <input style="height: 14px;" type="radio" name="gender" value="female"> Female
+                </label>
+            </fieldset>
+
+            <fieldset class="fieldset-item">
+                <legend>Interests in Fashion</legend>
+                <label class="label-checkbox">
+                    <input type="checkbox" name="interests" value="clothing" id="clothing">
+                    <span class="custom-checkbox"></span>
+                    Clothing
+                </label>
+                <label class="label-checkbox"> 
+                    <input type="checkbox" name="interests" value="accessories" id="accessories">
+                    <span class="custom-checkbox"></span>
+                    Accessories
+                </label>
+                <label class="label-checkbox"> 
+                    <input type="checkbox" name="interests" value="footwear" id="footwear">
+                    <span class="custom-checkbox"></span>
+                    Footwear
+                </label>
+                <label class="label-checkbox"> 
+                    <input type="checkbox" name="interests" value="trends" id="trends">
+                    <span class="custom-checkbox"></span>
+                    Trends
+                </label>
+                <label class="label-checkbox"> 
+                    <input type="checkbox" name="interests" value="sustainable" id="sustainable">
+                    <span class="custom-checkbox"></span>
+                    Sustainable Fashion
+                </label>
+            </fieldset>
+
+            <fieldset class="fieldset-item">
+                <legend>Country</legend>
+
+                <label for="country">Select your country:</label><br>
+                <select class="fullscreen" id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </fieldset>
+<div style="margin: 10px;    text-align: center;">
+            <button style="    height: 48px;
+            border: 1px solid;
+            border-radius: 25px;
+            min-width: 50%;
+            cursor: pointer;
+            " type="submit">Sign Up</button>    </div>
+        </form>
+    </div>
+    </div>
+
+
+        <footer>
+            <p>&copy; 2024 Fashion Shop. developed by Mariem TOUNSI.</p> 
+        </footer>
+    </div>
+</body>
+
+</html>

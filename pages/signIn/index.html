@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="../../css/styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Fashion Shop</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for products...">
+                <button id="search-button">Search</button>
+            </div>
+            <ul style="align-items: center;">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li> 
+                <li><a href="#"> Se connecter </a></li> 
+                <li><a href="#PANIER" style="display: flex;align-items: center;">
+                    <span style="margin-right: 5px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+                    <path d="M6 2L3 6v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg> 
+                </span>  
+                Panier    
+                    
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="container">
+        <h1>Signup</h1>
+        <form id="signup-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required><br>
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label>
+                    <input type="radio" name="gender" value="male" required> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other"> Other
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interests</legend>
+                <label>
+                    <input type="checkbox" name="interests" value="fashion"> Fashion
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="technology"> Technology
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="travel"> Travel
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Country</legend>
+                <label for="country">Select your country:</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+    <footer>
+<div style="height: 400px;border-bottom: 1px solid;">
+
+</div>
+        <p>&copy; 2024 Fashion Shop. developed by Mariem TOUNSI.</p>
+   
+    </footer>
+</div>
+
+</body>
+</html>
