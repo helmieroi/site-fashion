@@ -290,8 +290,10 @@ function renderListArticle() {
         product.className = "product";
         product.innerHTML = `  <div onclick="addQueryParams(${index})" class="product-container">
                     <img src="${item.photo}" loading="lazy" alt="${item.name}" >
+                    <div style="width:100%;">
                     <h3>${item.name}</h3>
                     <p>${"$" + item.price}</p>
+                    </div>
                 </div>
                     <button onclick="addArticle(${index})">Ajouter au panier</button> 
           `;

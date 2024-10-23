@@ -1,177 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Shop</title>
     <link rel="stylesheet" href="../../css/styles.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
+
 <body>
     <header>
         <nav>
             <h1>Fashion Shop</h1>
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Rechercher des produits...">
-<button id="search-button">Rechercher</button>
+                <button id="search-button">Rechercher</button>
             </div>
             <ul style="align-items: center;">
                 <li><a href="../home/index.html">Accueil</a></li>
                 <li><a href="#products">Produits</a></li>
-                <li><a href="../signIn/index.html" > Se connecter </a></li>
+                <li><a href="../signIn/index.html"> Se connecter </a></li>
                 <li><a href="../card/index.html" style="display: flex;align-items: center;">
-                    <span style="margin-right: 5px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
-                    <path d="M6 2L3 6v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                  </svg> 
-                </span>  
-                Panier    
-                    
+                        <span style="margin-right: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-shopping-bag">
+                                <path d="M6 2L3 6v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </span>
+                        Panier
+
                     </a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero" class="hero1">
-        <div class="background-hero" ></div>
-  <div class="hero-container"> 
-        <h2>Bienvenue à la boutique de mode</h2>
-        <p>Découvrez les dernières tendances de la mode</p>
-        <a href="#products">Achetez maintenant</a>
+        <div class="background-hero"></div>
+        <div class="hero-container">
+            <h2>Bienvenue à la boutique de mode</h2>
+            <p>Découvrez les dernières tendances de la mode</p>
+            <a href="#products">Achetez maintenant</a>
         </div>
-    </section> 
+    </section>
 
 
-    <section id="mini-products"> 
+    <section id="mini-products">
         <div id="product-list" class="product-list">
 
-            <div class="mini-product">
-                <div  class="product-container">
-                    <img src="../../images/articles/article1.png" loading="lazy"alt="Product 3"> 
-                </div> 
-            </div>
-            
-            <div class="mini-product">
-                <div  class="product-container">
-                    <img src="../../images/articles/article1.png" loading="lazy"alt="Product 3"> 
-                </div> 
-                </div>
-                <div class="mini-product">
-                <div  class="product-container">
-                    <img src="../../images/articles/article1.png" loading="lazy"alt="Product 3"> 
-                </div> 
-                </div>
-                <div class="mini-product">
-            <div  class="product-container">
-                <img src="../../images/articles/article1.png" loading="lazy"alt="Product 3"> 
-            </div> 
-            </div>
-            <div class="mini-product">
-                <div  class="product-container">
-                    <img src="../../images/articles/article1.png" loading="lazy"alt="Product 3"> 
-                </div> 
-          </div>
+        </div>
     </section>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"> 
-            <div class="hero-container">  
-                <img src="../../images/hero2.png" loading="lazy"alt="Product 3"> 
-             </div>
-      
-      </div>
-      <div class="swiper-slide">
-        <div class="hero-container">  
-            <img src="../../images/hero2.png" loading="lazy"alt="Product 3"> 
-         </div>
-      </div> 
-      <div class="swiper-slide">
-        <div class="hero-container">  
-            <img src="../../images/hero2.png" loading="lazy"alt="Product 3"> 
-         </div>
-      
-      </div> 
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="hero-container">
+                    <img src="../../images/hero2.png" loading="lazy" alt="Product 3">
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-container">
+                    <img src="../../images/hero2.png" loading="lazy" alt="Product 3">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-container">
+                    <img src="../../images/hero2.png" loading="lazy" alt="Product 3">
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div> 
-  </div>
-  <br/>
+    <br />
 
     <section id="products">
-        <h2  style="
+        <h2 style="
         margin-left: 70px;
         margin-right: 70px;">Produits en vedette</h2>
-        <div id="product-list" class="product-list"> 
-          
+        <div id="product-list" class="product-list">
+
         </div>
     </section>
 
     <footer>
-<div style="height: 200px;border-bottom: 1px solid;">
-<div>
-
-    <div>
-        <a href="">
-    LOCALISATION 
-</a>
-   </div>
+        <div style="padding: 20px 25px;
+        display: flex;
+        border-bottom: 1px solid;
+        justify-content: space-between;
+    ">
 
 
-   <div>
+            <div style="display: flex; align-items: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C8.69 2 6 4.69 6 8c0 3.28 6 10 6 10s6-6.72 6-10c0-3.31-2.69-6-6-6z" />
+                    <circle cx="12" cy="8" r="2" />
+                </svg>
 
-</div>
-   
-</div> 
-</div>
+                <span>
+                    <a href="" style="margin-left: 6px; color: #eeeeff; font-size: 18px; font-weight: 600;">
+                        Localisation
+                    </a> </span>
+            </div>
+
+            <div style=" display: flex;
+    align-items: center;">
+                <span style="margin-right: 5px;" class="icon-button" onclick="window.open('https://mail.google.com').focus()">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#06071A"
+                            d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+                    </svg>
+
+                </span>
+                <span style="margin-right: 5px;" class="icon-button"  onclick="window.open('https://facebook.com').focus()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                        viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#06071A"
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+                </span>
+                
+                <span style="margin-right: 5px;" class="icon-button" onclick="window.open('https://www.instagram.com').focus()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#06071A"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </span>
+                
+                <span style="margin-right: 5px;" class="icon-button" onclick="window.open('https://x.com/').focus()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#06071A"
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+
+                </span> 
+
+            </div>
+
+
+        </div>
         <p>&copy; 2024 Fashion Shop. developed by Mariem TOUNSI.</p>
-   
+
     </footer>
- 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    function shopNow() {
-alert("Welcome to the shop!");
-} 
 
-</script>
-<script src="../../js/index.js"></script>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    const progressCircle = document.querySelector(".autoplay-progress svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      on: {
-        autoplayTimeLeft(s, time, progress) {
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function shopNow() {
+            alert("Welcome to the shop!");
         }
-      }
-    });
-  </script>
+
+    </script>
+    <script src="../../js/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
