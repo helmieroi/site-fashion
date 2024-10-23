@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Se connecter </title>
+    <title>Fashion Shop</title>
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
@@ -19,7 +19,7 @@
             <ul style="align-items: center;">
                 <li><a href="../home/index.html">Accueil</a></li>
                 <li><a href="../home/index.html#products">Produits</a></li>
-                <li><a href="#" > Se connecter </a></li>
+                <li><a href="../signIn/index.html" > Se connecter </a></li>
                 <li><a href="../card/index.html" style="display: flex;align-items: center;">
                         <span style="margin-right: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -41,22 +41,15 @@
         <div class="container-photo"></div>
         <div class="container-login" style="align-content: center;">
         <h1 style="text-align: center;    color: #000;
-    opacity: 0.8">Bienvenue sur Fashion Shop</h1>
-        <h4 style="text-align: center;    color: #000;
-    opacity: 0.6">Identifiez-vous pour continuer</h4>
+    opacity: 0.8">Mot de passe oublié</h1> 
         <form id="signup-form" onsubmit="onValidForm(event)" style="display: flex; justify-content: center;"> 
  <div class="form-container">
                 <div class="item">
                     <label for="email">Email:</label><br>
                     <input class="fullscreen" type="email" id="email" name="email" required><br>
-                </div>
-
-                <div class="item">
-                    <label for="password">Mot de passe:</label><br>
-                    <input class="fullscreen" type="password" id="password" name="password" required><br>
                 </div> 
            <div style="margin: 8px; text-align: center;">
-            <button class="login" type="submit">Sign Up</button>
+            <button class="login" type="submit">Suivant</button>
             </div>
 
 
@@ -65,8 +58,8 @@
 <div style="margin-top: 14px; margin-bottom: 14px; ">
     Nouveau client? <a href="../signUp/index.html" style="margin-left: 3px;">S'enregistrer!</a>
  </div>
- <div  onclick="goTo('../forgetPassword/index.html')" style="margin-top: 14px; margin-bottom: 14px; text-decoration: underline; cursor: pointer;">
-    Mot de passe oublié ? 
+ <div onclick="goTo('../signIn/index.html')" style="margin-top: 14px; margin-bottom: 14px; text-decoration: underline; cursor: pointer;">
+    Se connecter  
  </div>
  </div>
         </form>

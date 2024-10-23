@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Panier - Fashion Shop</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+    <header style="position: initial;"> 
+            <nav>
+                <h1>Fashion Shop</h1>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Rechercher des produits...">
+    <button id="search-button">Rechercher</button>
+                </div>
+                <ul style="align-items: center;">
+                    <li><a href="../home/index.html">Accueil</a></li>
+                    <li><a href="#products">Produits</a></li>
+                    <li><a href="../signIn/index.html" > Se connecter </a></li>
+                    <li><a href="../card/index.html" style="display: flex;align-items: center;">
+                        <span style="margin-right: 5px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+                        <path d="M6 2L3 6v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                      </svg> 
+                    </span>  
+                    Panier    
+                        
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="container" style="    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;">
+        <h2>Votre Panier</h2>
+        <div id="cart-container" style="min-width: 600px;">
+            <!-- Cart items will be dynamically loaded here -->
+            <table id="cart-table" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Produit</th>
+                        <th style="text-align: right;">Quantité</th>
+                        <th style="text-align: right;">Prix</th>
+                        <th style="text-align: right;">Total</th>
+                        <th style="text-align: center;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                </tbody>
+            </table>
+                   <!-- Total Price Section -->
+        <div id="cart-summary" style="text-align: right; margin-top: 20px;width: 100%; display: flex;     justify-content: space-between;
+    align-items: center;">
+            <h2>Total: <span id="cart-total" style="color: rgb(21, 116, 255);">20€</span></h3>
+            <button style="width: auto; height: auto; padding: 10px 20px;" class="login" id="checkout-button">Passer à la caisse</button>
+        </div>
+    </div>
+
+        </div>
+
+ 
+    <footer style="margin-top: auto;">
+        <p>&copy; 2024 Fashion Shop. Developed by Mariem TOUNSI.</p>
+    </footer>
+
+    <script src="../../js/index.js"></script>
+</body>
+
+</html>

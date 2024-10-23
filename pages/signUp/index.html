@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Shop</title>
+    <title>Créer un compte</title>
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
@@ -13,14 +13,14 @@
         <nav>
             <h1>Fashion Shop</h1>
             <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search for products...">
-                <button id="search-button">Search</button>
+                <input type="text" id="search-input" placeholder="Rechercher des produits...">
+<button id="search-button">Rechercher</button>
             </div>
             <ul style="align-items: center;">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#products">Produits</a></li>
-                <li><a href="#"> Se connecter </a></li>
-                <li><a href="#PANIER" style="display: flex;align-items: center;">
+                <li><a href="../home/index.html">Accueil</a></li>
+                <li><a href="../home/index.html#products">Produits</a></li>
+                <li><a href="../signIn/index.html" > Se connecter </a></li>
+                <li><a href="../card/index.html" style="display: flex;align-items: center;">
                         <span style="margin-right: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -40,17 +40,17 @@
     <div class="container">
         <div class="container-photo"></div>
         <div class="container-login">
-        <h1>Signup</h1>
-        <form id="signup-form">
+        <h1 style="text-align: center;">Créer un compte</h1>
+        <form id="signup-form" onsubmit="onValidForm(event)">
             <fieldset class="fieldset-item">
-                <legend>Personal Information</legend>
+                <legend>Information personnelle</legend>
 
                 <div class="item">
-                    <label for="first-name">First Name:</label><br>
+                    <label for="first-name">Prénom:</label><br>
                     <input class="fullscreen" type="text" id="first-name" name="first-name" required><br>
                 </div>
                 <div class="item">
-                    <label for="last-name">Last Name:</label><br>
+                    <label for="last-name">Nom:</label><br>
                     <input class="fullscreen" type="text" id="last-name" name="last-name" required><br>
                 </div>
                 <div class="item">
@@ -59,79 +59,80 @@
                 </div>
 
                 <div class="item">
-                    <label for="password">Password:</label><br>
+                    <label for="password">Mot de passe:</label><br>
                     <input class="fullscreen" type="password" id="password" name="password" required><br>
                 </div>
 
                 <div class="item">
-                    <label for="confirm-password">Confirm Password:</label><br>
+                    <label for="confirm-password">Confirmez le mot de passe:</label><br>
                     <input class="fullscreen" type="password" id="confirm-password" name="confirm-password"
                         required><br>
                 </div>
                 <div class="item">
-                    <label for="photo">Upload Photo:</label><br>
+                    <label for="photo">Télécharger une photo:</label><br>
                     <input type="file" id="photo" name="photo" accept="image/*" required><br>
                 </div>
             </fieldset>
 
             <fieldset class="fieldset-item">
-                <legend>Gender</legend>
+                <legend>Sexe</legend>
                 <label>
-                    <input style="height: 14px;" type="radio" name="gender" value="male" required> Male
+                    <input style="height: 14px;" type="radio" name="gender" value="male" required> Homme
                 </label>
                 <label>
-                    <input style="height: 14px;" type="radio" name="gender" value="female"> Female
+                    <input style="height: 14px;" type="radio" name="gender" value="female"> Femme
                 </label>
             </fieldset>
 
             <fieldset class="fieldset-item">
-                <legend>Interests in Fashion</legend>
+                <legend>Intérêts dans la mode</legend>
                 <label class="label-checkbox">
                     <input type="checkbox" name="interests" value="clothing" id="clothing">
                     <span class="custom-checkbox"></span>
-                    Clothing
+                    Vêtements
                 </label>
                 <label class="label-checkbox"> 
                     <input type="checkbox" name="interests" value="accessories" id="accessories">
                     <span class="custom-checkbox"></span>
-                    Accessories
+                    Accessoires
                 </label>
                 <label class="label-checkbox"> 
                     <input type="checkbox" name="interests" value="footwear" id="footwear">
                     <span class="custom-checkbox"></span>
-                    Footwear
+                    Chaussures
                 </label>
                 <label class="label-checkbox"> 
                     <input type="checkbox" name="interests" value="trends" id="trends">
                     <span class="custom-checkbox"></span>
-                    Trends
+                    Tendances
                 </label>
                 <label class="label-checkbox"> 
                     <input type="checkbox" name="interests" value="sustainable" id="sustainable">
                     <span class="custom-checkbox"></span>
-                    Sustainable Fashion
+                    Mode durable
                 </label>
             </fieldset>
 
             <fieldset class="fieldset-item">
-                <legend>Country</legend>
-
-                <label for="country">Select your country:</label><br>
+                <legend>Pays</legend>
+            
+                <label for="country">Sélectionnez votre pays :</label><br>
                 <select class="fullscreen" id="country" name="country" required>
-                    <option value="" disabled selected>Select your country</option>
-                    <option value="usa">USA</option>
+                    <option value="" disabled selected>Sélectionnez votre pays</option>
+                    <option value="usa">États-Unis</option>
                     <option value="canada">Canada</option>
-                    <option value="uk">UK</option>
-                    <option value="australia">Australia</option>
+                    <option value="uk">Royaume-Uni</option>
+                    <option value="australia">Australie</option>
                 </select>
             </fieldset>
-<div style="margin: 10px;    text-align: center;">
-            <button style="    height: 48px;
-            border: 1px solid;
-            border-radius: 25px;
-            min-width: 50%;
-            cursor: pointer;
-            " type="submit">Sign Up</button>    </div>
+            <div style="margin: 10px; padding: 0px 10px; text-align: center;">
+                <button class="login" type="submit">S'inscrire</button>
+            </div>
+<div style="margin-top: 14px; margin-bottom: 14px; ">
+   Vous avez déjà un compte? <a href="../signIn/index.html" style="margin-left: 3px;">Connexion</a>
+ </div>
+
+
         </form>
     </div>
     </div>
@@ -141,6 +142,9 @@
             <p>&copy; 2024 Fashion Shop. developed by Mariem TOUNSI.</p> 
         </footer>
     </div>
+
+    <!-- Link to the external JS file -->
+    <script src="../../js/index.js"></script>
 </body>
 
 </html>
