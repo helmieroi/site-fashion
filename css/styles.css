@@ -82,6 +82,7 @@ nav ul li a:hover {
 
 .hero-container h2 {
     font-size: 72px;
+    
 }
 
 .hero-container p {
@@ -175,7 +176,13 @@ nav ul li a:hover {
 
 .product-container {
     padding: 15px;
+cursor: pointer;
+height: calc(100% - 80px);
+}
 
+.product-container:hover {
+ opacity: 0.6; 
+ 
 }
 
 .product img {
@@ -358,5 +365,16 @@ button.login{
     min-width: 450px;
     max-width: 70%;
 }
-legend {    font-size: 20px;
+legend {
+    font-size: 20px;
     font-weight: 600;}
+
+ .root-product{
+    max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;  
+    }
+#cart-container{
+    height:calc(100vh - 112px);
+    overflow-y: auto;
+}

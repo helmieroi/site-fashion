@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail de l'article - Fashion Shop</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 16px;
+            max-width: 300px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .price {
+            font-size: 1.5em;
+            color: green;
+        }
+    </style>
+
 </head>
 
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
@@ -36,46 +54,8 @@
         </nav>
     </header>
 
-    <div class="container" >
-        <div class="product-detail">
-            <!-- Left section: product image -->
-            <div class="product-image">
-                <img src="../../images/sample-product.jpg" alt="Product Image" style="width: 100%; height: auto;">
-            </div>
-
-            <!-- Right section: product details -->
-            <div class="product-info">
-                <h2>Nom de l'article</h2>
-                <p class="price">49.99€</p>
-                <p class="description">
-                    Description détaillée de l'article. Ce produit est fait de matériaux de haute qualité, conçu pour offrir style et confort.
-                </p>
-
-                <!-- Product Options -->
-                <div class="product-options">
-                    <label for="size">Taille :</label>
-                    <select id="size">
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
-
-                    <label for="color">Couleur :</label>
-                    <select id="color">
-                        <option value="Rouge">Rouge</option>
-                        <option value="Noir">Noir</option>
-                        <option value="Blanc">Blanc</option>
-                    </select>
-
-                    <label for="quantity">Quantité :</label>
-                    <input type="number" id="quantity" value="1" min="1">
-                </div>
-
-                <!-- Add to Cart Button -->
-                <button class="add-to-cart-button">Ajouter au panier</button>
-            </div>
-        </div>
+    <div id="page-article-container" class="container" style="justify-content: center;">
+        <div id="product-container"></div>
     </div>
 
     <footer>

@@ -40,9 +40,12 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    align-items: center;">
-        <h2>Votre Panier</h2>
-        <div id="cart-container" style="min-width: 600px;">
+    align-items: center;"> 
+        <div id="cart-container" style="min-width: 800px;">
+        <fieldset class="fieldset-item">
+            <legend>Votre Panier</legend>
+
+            <div class="item">
             <!-- Cart items will be dynamically loaded here -->
             <table id="cart-table" style="width: 100%;">
                 <thead>
@@ -61,13 +64,14 @@
         <div id="cart-summary" style="text-align: right; margin-top: 20px;width: 100%; display: flex;     justify-content: space-between;
     align-items: center;">
             <h2>Total: <span id="cart-total" style="color: rgb(21, 116, 255);">20€</span></h3>
-            <button style="width: auto; height: auto; padding: 10px 20px;" class="login" id="checkout-button">Passer à la caisse</button>
+            <button style="width: auto; height: auto; padding: 10px 20px;" class="login" id="checkout-button">Valider</button>
         </div>
-    </div>
-
-        </div>
-
  
+   
+
+        </div>
+    </fieldset>
+</div>
     <footer style="margin-top: auto;">
         <p>&copy; 2024 Fashion Shop. Developed by Mariem TOUNSI.</p>
     </footer>
